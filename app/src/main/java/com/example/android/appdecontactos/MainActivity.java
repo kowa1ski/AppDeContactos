@@ -11,8 +11,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        DbHelper helper = new DbHelper(this);
-        SQLiteDatabase db = helper.getWritableDatabase();
+        DataBaseManager manager = new DataBaseManager(this);
+        manager.insertar("Jaime", "666111222333");
+        manager.insertar2("Pablo", "666222333444");
+
+
 
 
 
